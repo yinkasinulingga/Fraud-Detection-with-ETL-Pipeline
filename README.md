@@ -1,4 +1,3 @@
-
 ---
 
 # **Fraud Detection with ETL Pipeline**  
@@ -21,15 +20,21 @@ Proyek ini mengembangkan sistem **deteksi fraud berbasis ETL dan Machine Learnin
 - **Automasi & Notifikasi**: EmailOperator (Airflow)  
 
 ## **Struktur File**  
-`Fraud_DAG.py` → Skrip DAG Airflow untuk pipeline ETL dan prediksi fraud  
-`Modeling.ipynb` → Eksplorasi dan pemrosesan data transaksi  
-`model.pkl` → Model Machine Learning yang digunakan untuk prediksi  
+- `Fraud_DAG.py` → Skrip DAG Airflow untuk pipeline ETL dan prediksi fraud  
+- `Modeling.ipynb` → Eksplorasi dan pemrosesan data transaksi  
+- `model.pkl` → Model Machine Learning yang digunakan untuk prediksi  
 
 ## **Kesimpulan dan Rekomendasi**  
-- **Automasi deteksi fraud** → Sistem berbasis Airflow memungkinkan pemrosesan data yang cepat dan minim intervensi manual.  
-- **Notifikasi real-time** → Email alert membantu tim dalam merespons transaksi mencurigakan dengan lebih cepat.  
-- **Peningkatan akurasi model** → Dengan data yang bersih, model dapat lebih akurat dalam mengidentifikasi pola transaksi fraud.  
-- **Pengembangan lebih lanjut** → Integrasi dengan dashboard visualisasi (Tableau atau Kibana) dapat memberikan insight lebih mendalam.  
+- **Automasi deteksi fraud meningkatkan efisiensi** → Dengan implementasi Apache Airflow, proses deteksi transaksi mencurigakan dapat dilakukan secara otomatis tanpa intervensi manual.  
+- **Notifikasi real-time membantu tim dalam investigasi** → Sistem yang mengirimkan peringatan otomatis memastikan tindakan pencegahan dapat segera diambil untuk mengurangi potensi kerugian akibat penipuan.  
+- **Peningkatan akurasi model** → Dengan data yang bersih dan pipeline yang optimal, model dapat lebih akurat dalam mengidentifikasi pola transaksi fraud.  
+- **Pengembangan lebih lanjut** → Integrasi dengan dashboard visualisasi (Tableau atau Kibana) dapat memberikan insight lebih mendalam terhadap tren transaksi yang mencurigakan.  
+
+## **Dampak Bisnis**  
+- **Mengurangi kerugian akibat penipuan** → Dengan deteksi lebih cepat dan akurat, perusahaan dapat mengurangi transaksi fraud yang berpotensi merugikan finansial.  
+- **Meningkatkan kepercayaan pelanggan** → Sistem keamanan yang kuat membuat pelanggan lebih percaya untuk bertransaksi di platform.  
+- **Optimasi sumber daya tim keamanan** → Dengan otomatisasi deteksi fraud, tim dapat lebih fokus pada investigasi kasus yang lebih kompleks daripada memproses transaksi secara manual.  
+- **Meningkatkan kepatuhan terhadap regulasi** → Sistem deteksi fraud membantu perusahaan dalam memenuhi persyaratan keamanan finansial dan audit transaksi yang lebih transparan.  
 
 ## **Cara Menjalankan Proyek**  
 1. **Jalankan Apache Airflow** dan pastikan PostgreSQL sudah terkoneksi.  
