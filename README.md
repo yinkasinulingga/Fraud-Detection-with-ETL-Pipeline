@@ -4,13 +4,13 @@
 # **Fraud Detection with ETL Pipeline**  
 
 ## **Deskripsi Proyek**  
-Proyek ini mengembangkan sistem **deteksi fraud berbasis ETL dan Machine Learning** untuk mengidentifikasi transaksi mencurigakan secara otomatis. Menggunakan **Apache Airflow**, pipeline ini mengekstrak data transaksi dari database, melakukan transformasi dan validasi, kemudian menerapkan model Machine Learning untuk mendeteksi aktivitas penipuan. Jika ditemukan transaksi mencurigakan, sistem akan mengirimkan notifikasi email untuk investigasi lebih lanjut.  
+Proyek ini mengembangkan sistem **deteksi fraud berbasis ETL dan Machine Learning** untuk mengidentifikasi transaksi mencurigakan secara otomatis. Menggunakan **Apache Airflow**, pipeline ini mengekstrak data transaksi dari database, memprosesnya, kemudian menerapkan model Machine Learning untuk mendeteksi aktivitas penipuan. Jika ditemukan transaksi mencurigakan, sistem akan mengirimkan notifikasi email kepada tim terkait untuk investigasi lebih lanjut.  
 
 ## **Alur Proses ETL**  
-1. **Extract**: Mengambil data transaksi dari PostgreSQL menggunakan Airflow.  
-2. **Load**: Menyimpan data yang telah diproses ke database untuk analisis lebih lanjut.  
-3. **Predict**: Menggunakan model Machine Learning untuk mengklasifikasikan transaksi sebagai fraud atau non-fraud.  
-4. **Alert**: Jika ditemukan fraud, sistem mengirimkan notifikasi email kepada tim terkait.  
+1. **Extract** → Mengambil data transaksi dari PostgreSQL menggunakan Airflow.  
+2. **Load** → Menyimpan data ke dalam database setelah diproses.  
+3. **Predict** → Menggunakan model Machine Learning untuk mengklasifikasikan transaksi sebagai fraud atau non-fraud.  
+4. **Alert** → Jika ditemukan transaksi mencurigakan, sistem mengirimkan notifikasi email ke tim terkait.  
 
 ## **Teknologi yang Digunakan**  
 - **Orkestrasi ETL**: Apache Airflow  
@@ -25,14 +25,20 @@ Proyek ini mengembangkan sistem **deteksi fraud berbasis ETL dan Machine Learnin
 `Modeling.ipynb` → Eksplorasi dan pemrosesan data transaksi  
 `model.pkl` → Model Machine Learning yang digunakan untuk prediksi  
 
+## **Kesimpulan dan Rekomendasi**  
+✔ **Automasi deteksi fraud** → Sistem berbasis Airflow memungkinkan pemrosesan data yang cepat dan minim intervensi manual.  
+✔ **Notifikasi real-time** → Email alert membantu tim dalam merespons transaksi mencurigakan dengan lebih cepat.  
+✔ **Peningkatan akurasi model** → Dengan data yang bersih, model dapat lebih akurat dalam mengidentifikasi pola transaksi fraud.  
+✔ **Pengembangan lebih lanjut** → Integrasi dengan dashboard visualisasi (Tableau atau Kibana) dapat memberikan insight lebih mendalam.  
+
 ## **Cara Menjalankan Proyek**  
 1. **Jalankan Apache Airflow** dan pastikan PostgreSQL sudah terkoneksi.  
 2. **Tambahkan DAG ke dalam Airflow** dengan menyimpan `Fraud_DAG.py` di folder DAG.  
 3. **Aktifkan DAG** melalui UI Airflow untuk memproses data dan melakukan prediksi.  
 4. **Periksa email notifikasi** jika terdapat transaksi yang terdeteksi sebagai fraud.  
 
-## Kontak  
-Jika ada pertanyaan atau saran terkait proyek ini, silakan hubungi **Saya** di Email : yinkasinulingga@gmail.com  
+## **Kontak**  
+Jika ada pertanyaan atau saran terkait proyek ini, silakan hubungi:  
+📧 **Email**: yinkasinulingga@gmail.com  
 
 ---
-
